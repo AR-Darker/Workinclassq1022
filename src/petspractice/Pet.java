@@ -1,5 +1,7 @@
 package petspractice;
 
+import java.util.Objects;
+
 public class Pet {
     private String name;
     private int age;
@@ -28,5 +30,19 @@ public class Pet {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Pet)) return false;
+        Pet pet = (Pet) o;
+        return age == pet.age &&
+                Objects.equals(name, pet.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 }

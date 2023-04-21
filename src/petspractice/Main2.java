@@ -7,6 +7,12 @@ public class Main2 {
         Pet cat1 = new Cat("Murzik",6);
         cat1.printPetInfo();
 
+        if (dog1.equals(cat1)) {
+            System.out.println("Same");
+        }else {
+            System.out.println("NotSame");
+        }
+
 
         PetService petService = new PetService();
         petService.say(dog1);
