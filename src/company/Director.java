@@ -29,7 +29,7 @@ public class Director extends Employee {
         return "Director{" +
                 "employees=" + Arrays.toString(employees) +
                 ", prof=" + prof +
-                '}';
+                ", salary=" + getSalary() ;
     }
 
     @Override

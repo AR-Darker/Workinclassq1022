@@ -15,6 +15,11 @@ public class Main3 {
         ((Director)director1).addworker(worker2);
         ((Director)director1).addworker(worker3);
 
-        System.out.println(director1);
+        ((Director)director2).addworker(worker4);
+
+        ((Director)director1).addworker(director2);
+
+
+        System.out.println(worker1);
     }
 }

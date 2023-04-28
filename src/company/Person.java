@@ -2,8 +2,8 @@ package company;
 
 public class Person {
 
-    private String name;
-    private String secondName;
+    protected String name;
+    protected String secondName;
 
     public Person(String name, String secondName){
         this.name = name;

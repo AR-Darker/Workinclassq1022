@@ -22,9 +22,11 @@ public abstract class Employee extends Person {
     @Override
     public String toString() {
         return "Employee{" +
-                "exp=" + exp +
+                "name=" + name +
+                ", secondName =" + secondName +
+                ", exp=" + exp +
                 ", prof=" + prof +
-                ", basic=" + basic +
+//                ", salary=" + getSalary() +
                 '}';
     }
 
