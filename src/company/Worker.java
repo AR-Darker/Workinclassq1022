@@ -13,8 +13,15 @@ public class Worker extends Employee{
     }
 
     @Override
+    public void addworker(Employee employee) {
+        super.addworker(employee);
+    }
+
+    @Override
     public void SetProf(){
         this.prof = prof.WORKER;
+
+
 
     }
 }

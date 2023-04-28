@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Director extends Employee {
 
-    Employee[] employees;
+
 
     public Director(String name, String secondName, int exp) {
         super(name, secondName, exp);
