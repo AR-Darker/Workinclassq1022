@@ -7,10 +7,25 @@ public class Main {
         User user = new User("gswd" , 23);
         User user1 = new User("gswd1" , 231);
         User user2 = new User("gswd2" , 232);
+        User user3 = new User("gswd3" , 232);
+        User user4 = new User("gswd4" , 232);
+        User user5 = new User("gswd5" , 232);
+        User user6 = new User("gswd6" , 232);
 
-        Set<User> set = new HashSet<>();
-        user.compareTo(user1);
-        System.out.println(user.compareTo(user1));
+        Set<User> set = new TreeSet<>(new UserComporator());
+        set.add(user);
+        set.add(user1);
+        set.add(user2);
+        set.add(user3);
+        set.add(user4);
+        set.add(user5);
+        set.add(user6);
+
+        System.out.println(set);
+
+
+//        user.compareTo(user1);
+//        System.out.println(user.compareTo(user1));
 
 //        Queue<String> queue = new ArrayDeque<>();
 //        queue.add("first");
