@@ -6,7 +6,7 @@ public class MyUncheckedException extends RuntimeException {
         super(message);
 
         public MyUncheckedException(User user){
-            super
+            super(user.toString() + "check all fields");
         }
     }
 }
