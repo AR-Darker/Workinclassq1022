@@ -7,10 +7,10 @@ public class Main {
         User user = new User("gswd" , 23);
         User user1 = new User("gswd1" , 231);
         User user2 = new User("gswd2" , 232);
-        User user3 = new User("gswd3" , 232);
-        User user4 = new User("gswd4" , 232);
-        User user5 = new User("gswd5" , 232);
-        User user6 = new User("gswd6" , 232);
+        User user3 = new User("gswd3" , 233);
+        User user4 = new User("gswd4" , 234);
+        User user5 = new User("gswd5" , 235);
+        User user6 = new User("gswd6" , 236);
 
         Set<User> set = new TreeSet<>(new UserComporator());
         set.add(user);
