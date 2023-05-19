@@ -13,9 +13,17 @@ public class Main6 {
             if("exit".equals(next)){
                 break;
             }else if ("get" .equals(next)) {
-                System.out.println(service.get());
+                try {
+                    System.out.println(service.get());
+                }catch (NoSuchElementException e) {
+                    System.out.println("NO");
+                }
             }else {
-                service.add(next);
+                try {
+                    service.add(next);
+                }catch (LowMemoryException e){
+                    System.out.println("Memory full");
+                }
 
             }
         }
