@@ -29,3 +29,5 @@ public class Main6 {
         }
     }
 }
+//Myclass class = new Myclass();
+//class.MyMethod;
