@@ -22,8 +22,8 @@ public class LocalMemoryService implements DataService {
         if(list.size()==0){
             throw new NoSuchElementException();
         }else {
-            list.remove(list.get(0));
+            return list.remove(0);
         }
-        return null;
+
     }
 }
