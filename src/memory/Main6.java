@@ -17,7 +17,7 @@ public class Main6 {
                     System.out.println(service.get());
                 }catch (NoSuchElementException e) {
                     System.out.println("NO");
-                }///////////
+                }
             }else {
                 try {
                     service.add(next);
